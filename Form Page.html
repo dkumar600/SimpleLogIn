@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+    <div class="form">
+      <div class="container"> <p id="log">Log In</p>
+        <form onsubmit="form()" >
+          <p id="username">
+          <input type="text" name="username" placeholder="Enter Username" required>
+          </p>
+          <p id="password">
+          <input type="password" name="password" placeholder="Enter Password" required>
+          </p>
+          <p id="gender">
+            <span class="male"> Male
+            <input type="radio" name="gender" value="male"></span>
+            <span class="female">Female
+            <input type="radio" name="gender" value="female"></span>
+          </p>
+            <p class="submit">
+            <input type="submit" name="Submit">
+          </p>
+          </form>
+        </div>
+      </div>
+      <script>
+        function form(){
+          event.preventDefault();
+          console.log("Hi")
+        }
+      </script>
+</body>
+</html>
